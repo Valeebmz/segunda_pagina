@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: rgb(207, 22, 66);
+}
+
+button:hover{
+    background-color: rgb(235, 62, 102);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: rgb(207, 22, 66); }
+
+header{
+    background-color: black;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(207, 22, 66);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(207, 22, 66);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(https://wallpaperaccess.com/full/1188345.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#We-are-PlutoAnime{
+    background-color: white;
+    color: black;
+}
+
+#We-are-PlutoAnime .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#forums{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#forums .container{
+    padding: 150px 0px;
+}
+
+#forums h2{
+    margin top: 0;
+    font-size: 3.2em;
+}
+
+#forums p{
+    display: none;
+}
+
+forums .cartas{
+background-position: center center;
+background-size: cover;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-SfQ1KENGB1CH0HC2QQGvSJ-Fl8TuPpCz9w&usqp=CAU);
+}
+
+.carta:nth-child(2){
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("images.jpg/process.jpg");
+background-size: cover;
+background-position: center center;
+}
+
+.carta:nth-child(3){
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(https://erikstore.com/blog/wp-content/uploads/2023/02/estrenos-anime-2023.jpg);
+background-size: cover;
+}
+
+#characteristics .container{
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+#characteristics li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+
+#join-now{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 80vh;
+}
+
+footer{
+    background-color: white;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(130, 127, 127);
+}
+
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
