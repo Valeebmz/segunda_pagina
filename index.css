@@ -124,7 +124,7 @@ header a:hover{
 }
 
 #forums h2{
-    margin-top: 0P;
+    margin-top: 0px;
     font-size: 3.2em;
 }
 
@@ -132,7 +132,7 @@ header a:hover{
     display: none;
 }
 
-forums .cartas{
+#forums .cartas{
 background-position: center center;
 background-size: cover;
 padding: 50px;
