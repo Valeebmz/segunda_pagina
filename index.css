@@ -19,11 +19,11 @@ ul{list-style: none;}
 li{font-size: 1.25em;}
 
 button{
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: black;
     background-color: rgb(207, 22, 66);
@@ -79,7 +79,7 @@ header a:hover{
 #hero{
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
@@ -110,7 +110,7 @@ header a:hover{
 
 #We-are-PlutoAnime .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 150px 12px;
 }
 
 #forums{
@@ -120,7 +120,7 @@ header a:hover{
 }
 
 #forums .container{
-    padding: 150px 0px;
+    padding: 200px 12px;
 }
 
 #forums h2{
@@ -130,9 +130,14 @@ header a:hover{
 
 #forums p{
     display: none;
+    margin-bottom: 30px;
 }
 
-#forums .cartas{
+#forums h3{
+    margin-top: 0;
+}
+
+#forums .carta{
 background-position: center center;
 background-size: cover;
 padding: 50px;
@@ -146,7 +151,7 @@ background-image: linear-gradient(
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
 )
-,url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-SfQ1KENGB1CH0HC2QQGvSJ-Fl8TuPpCz9w&usqp=CAU);
+,url(https://mott.pe/noticias/wp-content/uploads/2016/08/anime1.jpg);
 }
 
 .carta:nth-child(2){
@@ -179,6 +184,7 @@ background-size: cover;
 #characteristics li{
     margin: 16px 0px;
     font-weight: bold;
+    justify-content: center;
 
 }
 
@@ -191,6 +197,7 @@ background-size: cover;
     background-color: black;
     color: white;
     height: 80vh;
+    
 }
 
 footer{
@@ -210,4 +217,158 @@ footer .container{
     align-items: flex-end;
 }
 
+@media (min-width: 720px){
 
+    header{
+       position: fixed;
+       width: 100%; 
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    #hero h1{
+        font-size: 5em;
+    }
+    
+    #We-are-PlutoAnime .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #We-are-PlutoAnime .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #We-are-PlutoAnime h2{
+        margin-top: 0px;
+    }
+
+    #We-are-PlutoAnime .img-container{
+        background-image: url(https://animenyc.com/wp-content/uploads/2019/05/alicepreview.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #forums .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #forums p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #forums h2{
+        font-size: 4em;
+        
+    }
+
+    #forums h3{
+        margin-top: 0;
+    }
+
+    #forums .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        height: 80vh;
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(https://mott.pe/noticias/wp-content/uploads/2016/08/anime1.jpg);
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("images.jpg/process.jpg");
+    }
+        
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(https://erikstore.com/blog/wp-content/uploads/2023/02/estrenos-anime-2023.jpg);
+    }
+    
+    #characteristics{
+        background-image: url(https://www.pngmart.com/files/13/Giorno-Giovanna-Transparent-Background.png);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 100px;
+    }
+
+    #characteristics .container{
+        text-align: initial;
+    }
+
+    #characteristics .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #characteristics ul{
+        width: 100%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    #characteristics{
+        background-position-x: calc(100vw 800px);
+    }
+}
